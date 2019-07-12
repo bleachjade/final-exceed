@@ -107,7 +107,7 @@ button.onclick = function () {
 
  this.style.backgroundColor = "rgb(" + red + "," + green + ",)";
 };
-
+$('body').scrollspy({ target: '#navbar-example' })
 
 
 

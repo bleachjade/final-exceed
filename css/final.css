@@ -506,3 +506,20 @@
 .uppercase {
   text-transform: uppercase;
 }
+
+p.ex3 {
+  background-color: white;
+  width: auto;
+  height: 25rem;
+  overflow-y: scroll;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  padding-right: 3%;
+  padding-left: 6.5%;
+
+}
+.bigbold {
+  size: 10rem;
+  font-weight: bold;
+}
