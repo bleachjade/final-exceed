@@ -1,151 +1,165 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>FRIENDS</title>
-        <meta name="description" content="Core HTML Project">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-        <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="vendor/select2/select2.min.css">
-        <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-    
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/style.min.css">
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-        <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    
-    </head>
-    
-    <html lang="en" style=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/final.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FRIENDS</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <title>Document</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-                integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            <link rel="stylesheet" href="C:\Users\Jade\Desktop\final\css\final.css">
-        </head>
-        
-            <body data-spy="scroll" data-target="#navbar-nav-header-example" class="static-layout vsc-initialized bd-content">
-                <div class="boxed-page">
-                    <div class="jumbotron d-flex align-items-center" style="background-image: url()">
-                        <div class="container text-center">
-                            <span class="lnr lnr-users fs-40 text-red"></span>
-                            <h1 class="display-2 mb-4 mt-3">Your <span class="text-red mt-3">FRIEND's</span> Mr.A</h1>
-                            <h3 class="mt-4 pt-4 bl-n2">
-                                Patient's Status<button class="button btn ml-5">Stable</button>
-                            </h3>
-                            <section id="gtco-features" class="bg-white">
-                                <div class="container">
-                                    <div class="section-content">
-                                        <div class="row">
-                                            <div class="col-md-12 features-holder">
-                                                <div class="row">
-                                                    <div class="col-md-4 offset-md-2 col-sm-6">
-                                                        <h4>Stay in the room</h4>
-                                                        <p>time</p>
-                                                    </div>
-                                                    <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
-                                                            <h4>Stay at the same position</h4>
-                                                            <p>time</p>
-                                                    </div>
-                                                </div>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar-nav-header-example" class="static-layout vsc-initialized bd-content">
+    <div class="boxed-page">
+        <div class="jumbotron d-flex align-items-center">
+            <div class="container text-center">
+                <span class="lnr lnr-users fs-40 text-red"></span>
+                <h1 class="display-2 mb-4 mt-3">Your <span class="text-red mt-3">FRIEND's</span> Mr.A</h1>
+                <h3 class="mt-4 pt-4 bl-n2">
+                    Patient's Status<button id="stable" class="button btn ml-5">Stable</button>
+                </h3>
+                <section id="gtco-features" class="bg-white">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-12 features-holder">
+                                    <div class="row">
+                                        <div class="col-md-4 offset-md-2 col-sm-6">
+                                            <h4>Stay in the room</h4>
+                                            <p>time</p>
+                                            <div id="ent-time">
+
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </section>
+                                        <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
+                                            <h4>Stay at the same position</h4>
+                                            <p>time</p>
+                                            <div id="detect-time">
 
-                            <br>
-                            <br>
-                            <br>
-                            <h3 class="mb-3 mt-4 pt-4 pb-4">
-                                Suggested Solutions
-                            </h3>
-                            <p class="ex3">
-                                    Talk with your doctor or therapist about improving your coping skills, and try these tips:<br>
-
-                                    <br><span class="bigbold">+ Simplify your life.</span> Cut back on obligations when possible, and set reasonable 
-                                    <br>goals for yourself. Give yourself permission to do less when you feel down.
-                                    <br><span class="bigbold">+ Write in a journal.</span> Journaling, as part of your treatment, may improve mood by 
-                                    <br>allowing you to express pain, anger, fear or other emotions.
-                                    <br>Read reputable self-help books and websites. Your doctor or therapist may be 
-                                    <br>able to recommend books or websites to read.
-                                    <br><span class="bigbold">+ Locate helpful groups.</span> Many organizations, such as the National Alliance on 
-                                    <br>Mental Illness (NAMI) and the Depression and Bipolar Support Alliance, offer 
-                                    <br>education, support groups, counseling and other resources to help with depression. 
-                                    <br>Employee assistance programs and religious groups also may offer help for mental 
-                                    <br>health concerns.
-                                    <br><span class="bigbold">+ Don't become isolated.</span> Try to participate in social activities, and get together with 
-                                    <br>family or friends regularly. Support groups for people with depression can help you 
-                                    <br>connect to others facing similar challenges and share experiences.
-                                    <br><span class="bigbold">+ Learn ways to relax and manage your stress.</span> Examples include meditation, 
-                                    <br>progressive muscle relaxation, yoga and tai chi.
-                                    <br><span class="bigbold">+ Structure your time. Plan your day.</span> You may find it helps to make a list of daily 
-                                    <br>tasks, use sticky notes as reminders or use a planner to stay organized.
-                                    <br><span class="bigbold">+ Don't make important decisions when you're down.</span> Avoid decision-making 
-                                    <br>when you're feeling depressed, since you may not be thinking clearly.
-                                
-                            </p>
-                            <br>
-                            <br>
-                            <br>
-                            <span class="lnr lnr-phone-handset fs-40"></span>
-                            <h3 class="mb-3 mt-4 pt-4">
-                                Emergency calls
-                            </h3>
-                    <section id="gtco-counter" class="bg-white">
-                            <div class="container">
-                                <div class="section-content">
-                                    <div class="row">
-                                        <div class="col-md-3 col-sm-6 counter-item">
-                                            <h3 class="text-red">Patient Tel.</h3>
-                                            <a href="tel:093-454-6950">093-454-6950</a>
+                                            </div>
                                         </div>
-                                        <div class="col-md-3 col-sm-6 counter-item">
-                                            <h3 class="text-red">MD.Christopher</h3>
-                                            <a href="tel:012-345-6789">012-345-6789</a>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 counter-item">
-                                            <h3 class="text-red">Ambulance</h3>
-                                            <a href="tel:1669">1669</a>
-                                        </div>
-                                        <div class="col-md-3 col-sm-6 counter-item">
-                                            <h3 class="text-red">Department of Mental health</h3>
-                                            <a href="tel:1667">1667</a>
+                                        <div class="col-12">
+                                            <h1 id="hit"></h1>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <h3 class="mb-3 mt-4 pt-4">
-                                Useful Resources
-                            </h3>
-                        <a href="https://www.bangkokhospital.com/en/bangkok-mental-health-rehabilitation-and-recovery-center" class="btn btn-light mt-3">Bangkok Mental Health Rehabilitation and Recovery Center</a>
-                        <a href="https://www.bumrungrad.com/en/behavioral-health-center" class="btn btn-light mt-3">Bumrungrad Behavioral Health Center</a>
-                        <a href="https://www.bch.in.th/medical-service/health-checkup/" class="btn btn-light mt-3">Bangkok Christian Hospital Health checkup</a>
                         </div>
                     </div>
-                </div>
-            </body>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="C:\Users\Jade\Desktop\final\js\final.js"></script>
-        
-        </html>
+                </section>
+
+                <br>
+                <br>
+                <br>
+                <h3 class="mb-3 mt-4 pt-4 pb-4">
+                    Suggested Solutions
+                </h3>
+                <p class="ex3">
+                    Talk with your doctor or therapist about improving your coping skills, and try these tips:<br>
+
+                    <br><span class="bigbold">+ Simplify your life.</span> Cut back on obligations when possible, and
+                    set reasonable
+                    <br>goals for yourself. Give yourself permission to do less when you feel down.
+                    <br><span class="bigbold">+ Write in a journal.</span> Journaling, as part of your treatment, may
+                    improve mood by
+                    <br>allowing you to express pain, anger, fear or other emotions.
+                    <br>Read reputable self-help books and websites. Your doctor or therapist may be
+                    <br>able to recommend books or websites to read.
+                    <br><span class="bigbold">+ Locate helpful groups.</span> Many organizations, such as the National
+                    Alliance on
+                    <br>Mental Illness (NAMI) and the Depression and Bipolar Support Alliance, offer
+                    <br>education, support groups, counseling and other resources to help with depression.
+                    <br>Employee assistance programs and religious groups also may offer help for mental
+                    <br>health concerns.
+                    <br><span class="bigbold">+ Don't become isolated.</span> Try to participate in social activities,
+                    and get together with
+                    <br>family or friends regularly. Support groups for people with depression can help you
+                    <br>connect to others facing similar challenges and share experiences.
+                    <br><span class="bigbold">+ Learn ways to relax and manage your stress.</span> Examples include
+                    meditation,
+                    <br>progressive muscle relaxation, yoga and tai chi.
+                    <br><span class="bigbold">+ Structure your time. Plan your day.</span> You may find it helps to make
+                    a list of daily
+                    <br>tasks, use sticky notes as reminders or use a planner to stay organized.
+                    <br><span class="bigbold">+ Don't make important decisions when you're down.</span> Avoid
+                    decision-making
+                    <br>when you're feeling depressed, since you may not be thinking clearly.
+
+                </p>
+                <br>
+                <br>
+                <br>
+                <span class="lnr lnr-phone-handset fs-40"></span>
+                <h3 class="mb-3 mt-4 pt-4">
+                    Emergency calls
+                </h3>
+                <section id="gtco-counter" class="bg-white">
+                    <div class="container">
+                        <div class="section-content">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 counter-item">
+                                    <h3 class="text-red">Patient Tel.</h3>
+                                    <a href="tel:093-454-6950">093-454-6950</a>
+                                </div>
+                                <div class="col-md-3 col-sm-6 counter-item">
+                                    <h3 class="text-red">MD.Christopher</h3>
+                                    <a href="tel:012-345-6789">012-345-6789</a>
+                                </div>
+                                <div class="col-md-3 col-sm-6 counter-item">
+                                    <h3 class="text-red">Ambulance</h3>
+                                    <a href="tel:1669">1669</a>
+                                </div>
+                                <div class="col-md-3 col-sm-6 counter-item">
+                                    <h3 class="text-red">Department of Mental health</h3>
+                                    <a href="tel:1667">1667</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h3 class="mb-3 mt-4 pt-4">
+                    Useful Resources
+                </h3>
+                <a href="https://www.bangkokhospital.com/en/bangkok-mental-health-rehabilitation-and-recovery-center"
+                    class="btn btn-light mt-3">Bangkok Mental Health Rehabilitation and Recovery Center</a>
+                <a href="https://www.bumrungrad.com/en/behavioral-health-center" class="btn btn-light mt-3">Bumrungrad
+                    Behavioral Health Center</a>
+                <a href="https://www.bch.in.th/medical-service/health-checkup/" class="btn btn-light mt-3">Bangkok
+                    Christian Hospital Health checkup</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="../js/final.js"></script>
+<script src="../js/linesent.js"></script>
+<script src="../js/countime.js"></script>
+
 </html>

@@ -107,6 +107,12 @@
   button:focus {
     outline: none; }
   
+  #stable:hover {
+    text-decoration: none;
+    color: #e2e1e1; 
+  }
+
+
   .btn:hover,
   a:hover {
     text-decoration: none;
@@ -522,4 +528,8 @@ p.ex3 {
 .bigbold {
   size: 10rem;
   font-weight: bold;
+}
+
+.alert {
+  background-color: #f03621;
 }
