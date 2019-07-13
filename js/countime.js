@@ -168,10 +168,11 @@ async function reset() {
     putvalue("status", "Basic")
     $('#alert').replaceWith(`<button id="stable" class="button btn ml-5">Stable</button>`)
     putvalue("startDetect", "0")
+    putvalue("statEnt", "Out")
+    putvalue("statDetect", "Detect")
     putvalue("startEnt", "0")
     putvalue("statHit", 0)
     $('#hit').hide()
-
 }
 
 
